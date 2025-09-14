@@ -55,12 +55,4 @@
 - Apple Developer account (for signing & testing on Vision Pro)  
 - R/Python environment (for model training)
 
-### Installation
-```bash
-# Clone this repo
-git clone https://github.com/YourUserName/your-repo.git
-cd your-repo
-
-# Open in Xcode
-open ClinicalAR.xcodeproj
 
