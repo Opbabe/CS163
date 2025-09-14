@@ -1,58 +1,41 @@
-# AR-readmission-
-# 🩺 AR-Enabled Clinical Decision Support (Apple Vision Pro)
+# CS163 Project Repo
+# 🩺 AR Readmission Coach (Apple Vision Pro)
 
-> **Mixed Reality for Smarter, Safer Discharge Planning**  
-> A Vision Pro app that helps clinicians identify 30-day readmission risk at the bedside, with intuitive AR overlays and hands-free interaction.
-
----
-
-## ✨ Features
-- 📊 **Patient Card UI** — World-anchored overlay showing readmission risk (Low / Med / High)  
-- 🧪 **Top Risk Drivers** — Examples: uncontrolled HbA1c, polypharmacy, long hospital stay  
-- 🗣️ **Hands-Only Interaction** — Pinch, tap, and gaze using Vision Pro native gestures  
-- 📄 **AI Note Taking (Optional)** — Voice-to-text using OpenAI speech models  
-- 🔒 **On-Device Privacy** — Core ML or JSON-based predictions, no PHI leaves the device  
+**Mixed Reality for Smarter, Safer Discharge Planning**  
+A visionOS app that helps clinicians spot 30-day readmission risks at the bedside using AR overlays and hand-only interaction.
 
 ---
 
-## 🧠 How It Works
-1. **Data Modeling**
-   - Train on clinical datasets (e.g., **MIMIC-IV**) using **R/Python**
-   - Models: Logistic Regression → **XGBoost** with SHAP interpretability
-   - Export predictions to **Core ML (.mlmodel)** or precomputed JSON
-
-2. **visionOS Development**
-   - Built in **Xcode** with **SwiftUI + RealityKit + ARKit**
-   - Assets authored in **Reality Composer Pro** (USD/USDZ format)
-   - Anchored **Patient Card** positioned at bedside or clinic desk
-
-3. **Clinician Workflow**
-   - **Glance:** See color-coded readmission risk chip
-   - **Tap:** Expand a bilingual, 2-minute “teach-back” discharge plan
-   - **Dictate:** Optional voice notes automatically converted into text
+## ✨ Highlights
+- 📊 **Patient Card** — risk level (Low / Med / High) with key drivers like HbA1c, polypharmacy, and LOS  
+- 🧠 **Smart Modeling** — Logistic Regression → XGBoost with SHAP, exported to Core ML / JSON  
+- 🖐️ **Native Gestures** — pinch, tap, gaze to expand a bilingual 2-min teach-back plan  
+- 📄 **Optional AI Notes** — speech-to-text for quick discharge documentation  
+- 🔒 **On-Device First** — all predictions run locally; no PHI leaves the headset  
 
 ---
 
-## 📈 Benefits
-- 🏥 **Hospitals** → Reduce billions lost to 30-day readmission penalties  
-- 👩‍⚕️ **Clinicians** → Smarter discharge planning with actionable drivers  
-- 👨‍👩‍👧 **Patients** → Clearer instructions, better follow-up, lower readmission risk  
+## 🚀 How It Works
+1. **Model Training** → R/Python on clinical datasets (e.g., MIMIC-IV)  
+2. **Export** → Core ML model (`.mlmodel`) or JSON with risk & drivers  
+3. **visionOS Build** → SwiftUI + RealityKit + ARKit, assets from Reality Composer Pro  
+4. **At Bedside** → Clinician sees risk chip, taps to expand plan, dictates notes if needed  
+
+---
+
+## 📈 Impact
+- 🏥 Hospitals → fewer penalties from avoidable readmissions  
+- 👩‍⚕️ Clinicians → faster, smarter discharge planning  
+- 👨‍👩‍👧 Patients → clear instructions they can actually follow  
 
 ---
 
 ## 🛠️ Tech Stack
-- **Languages:** Swift, SwiftUI, R, Python  
-- **Frameworks:** RealityKit, ARKit, Core ML, SHAP  
-- **Tools:** Xcode, Reality Composer Pro, Jupyter, RStudio  
-- **Hardware:** Apple Vision Pro  
+Swift • SwiftUI • RealityKit • ARKit • Core ML • R/Python • SHAP • Xcode • Vision Pro  
 
 ---
 
-## 🚀 Getting Started
+👨‍💻 **Author:** Nick Tran — Dept. of Computer Science, SJSU
 
-### Prerequisites
-- macOS with **Xcode 15+** and **visionOS SDK** installed  
-- Apple Developer account (for signing & testing on Vision Pro)  
-- R/Python environment (for model training)
 
 
